@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login Nico :)</title>
 </head>
 
 <body>
-Content of the document......
-</body>
 
+  <h1>Login para gente chevere </h1>
+<SCRIPT  language=JavaScript>
+
+function go(){
+if (document.form.password.value==document.form.login.value){
+        document.form.submit();
+    }
+    else{
+         alert("Equivocado intente de nuevo");
+    }
+}
+</SCRIPT>
+<FORM name=form action="TU_PAGINA_WEB.HTML">
+
+  <table class="egt">
+    <tr>
+      <td><P>Usuario:</td>
+      <td><INPUT type=text name=login></td>
+    </tr>
+    <tr>
+      <td><P>Contraseña:</td>
+      <td><INPUT type=password name=password></td>
+    </tr>
+  </table>
+<INPUT onclick=go() type=button value=Acceder>
+
+</FORM>
+</body>
 </html>
